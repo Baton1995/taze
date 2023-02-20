@@ -66,6 +66,26 @@
 
 
 
+// -------------------------------1 urok------------------------------------
+
+const numberOfFilms = +prompt('Сколько филмов вы уже посмотрели?', '');
 
 
+const personalMovieDB = {
+    count: numberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
 
+const a = promt('odin iz poslednih prosmotrennih filmov?', ''),
+      b = prompt('na skolko ocenili ego', ''),
+      c = promt('odin iz poslednih prosmotrennih filmov?', ''),
+      d = prompt('na skolko ocenili ego', '');
+
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+
+
+console.log(personalMovieDB)
